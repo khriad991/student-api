@@ -8,9 +8,7 @@ const prisma = new PrismaClient();
 export async function GET(req){
     try {
 
-        const result = await prisma.user.findMany({
-            orderBy:{id:"asc"}
-        })
+        const result = await prisma.user.findMany()
 
         return NextResponse.json({
             "status":"fail",

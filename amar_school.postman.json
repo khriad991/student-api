@@ -1,0 +1,361 @@
+{
+	"info": {
+		"_postman_id": "1a31c64b-b754-483d-8d47-f15e1bfd4678",
+		"name": "amar_school",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23161432",
+		"_collection_link": "https://orange-meadow-691206.postman.co/workspace/Ostad-NextJS~25585853-df2d-438b-a81d-9f8c02f69c97/collection/23161432-1a31c64b-b754-483d-8d47-f15e1bfd4678?action=share&source=collection_link&creator=23161432"
+	},
+	"item": [
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"React Developer\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/student/create",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"student",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"React Developer\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/student/create",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"student",
+										"create"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "createMany",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n     {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"React Developer\"\r\n  },\r\n   {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"Nextjs Developer\"\r\n  }, {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"Nextjs & Prisma Developer\"\r\n  },     {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"React Redux Devlopment\"\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/student/createMany",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"student",
+								"createMany"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createMany",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n     {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"React Developer\"\r\n  },\r\n   {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"Nextjs Developer\"\r\n  }, {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"Nextjs & Prisma Developer\"\r\n  },     {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"React Redux Devlopment\"\r\n  }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/student/createMany",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"student",
+										"createMany"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/student/delete?id=12",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"student",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/student/delete?id=15",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"student",
+										"delete"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "15"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"Reacjst & Nextjs\"\r\n  }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASEURL}}/student/update?id=5",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"student",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan Riad\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"Reacjst & Nextjs\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/student/update?id=5",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"student",
+										"update"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/student/18",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"student",
+								"18"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "findOne",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/student/18",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"student",
+										"18"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/student/all",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"student",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "findAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/student/all",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"student",
+										"all"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASEURL",
+			"value": "http://localhost:3000/api",
+			"type": "string"
+		}
+	]
+}
