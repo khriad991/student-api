@@ -11,7 +11,7 @@ export  async function DELETE(req){
             where:{id:parseInt(id)}
         })
         
-        return NextResponse.json({status:"success", data:result})
+        return NextResponse.json({status:"success",massage:"Deleted successfully", data:result})
     }catch (e) {
         return NextResponse.json({message:"something went wrong",data:e})
     }
