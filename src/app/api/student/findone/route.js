@@ -6,13 +6,11 @@ const prisma = new PrismaClient();
 
 export async function GET(req){
     try {
-        const searchParams=new URL(req.url)
-        const id = searchParams.pathname.split("/").pop()
-
-        const result = await prisma.user.findMany({
+        const {searchParams}= new URL(req.url)
+        const id = searchParams.get("id")
+        const result = await prisma.user.findUnique({
             where:{id:parseInt(id)}
         })
-
 
 
         return NextResponse.json({status:"success",data:result})

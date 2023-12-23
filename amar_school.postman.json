@@ -254,13 +254,19 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{BASEURL}}/student/18",
+							"raw": "{{BASEURL}}/student/findone?id=5",
 							"host": [
 								"{{BASEURL}}"
 							],
 							"path": [
 								"student",
-								"18"
+								"findone"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5"
+								}
 							]
 						}
 					},
@@ -271,13 +277,19 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASEURL}}/student/18",
+									"raw": "{{BASEURL}}/student/findone?id=5",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"student",
-										"18"
+										"findone"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "5"
+										}
 									]
 								}
 							},
