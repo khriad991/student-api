@@ -75,7 +75,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\r\n     {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"React Developer\"\r\n  },\r\n   {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"Nextjs Developer\"\r\n  }, {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"Nextjs & Prisma Developer\"\r\n  },     {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"React Redux Devlopment\"\r\n  }\r\n]",
+							"raw": "[\r\n     {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"React Developer\"\r\n  },\r\n   {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"Nextjs Developer\"\r\n   }\r\n]",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -83,13 +83,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{BASEURL}}/student/createMany",
+							"raw": "{{BASEURL}}/student/createmany",
 							"host": [
 								"{{BASEURL}}"
 							],
 							"path": [
 								"student",
-								"createMany"
+								"createmany"
 							]
 						}
 					},
@@ -132,7 +132,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{BASEURL}}/student/delete?id=12",
+							"raw": "{{BASEURL}}/student/delete?id=21",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -143,7 +143,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "12"
+									"value": "21"
 								}
 							]
 						}
@@ -185,7 +185,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\r\n    \"first_name\": \"Kamrul\",\r\n    \"last_name\": \"Hasan\",\r\n    \"age\": 25,\r\n    \"grade\": \"A\",\r\n    \"courses\": \"Reacjst & Nextjs\"\r\n  }\r\n",
+							"raw": " {\r\n    \"first_name\": \"Kamrul 20\",\r\n    \"last_name\": \"Hasan 20\",\r\n    \"age\": 25,\r\n    \"grade\": \"Ab 20\",\r\n    \"courses\": \"Reacjst 20 & Nextjs\"\r\n  }\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -193,7 +193,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{BASEURL}}/student/update?id=5",
+							"raw": "{{BASEURL}}/student/update?id=20",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -204,7 +204,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "5"
+									"value": "20"
 								}
 							]
 						}

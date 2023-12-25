@@ -17,6 +17,6 @@ model user {
   age        Int      @db.SmallInt
   grade      String   @db.VarChar(30)
   courses    String   @db.VarChar(150)
-  createdAt  DateTime @default(now()) @db.DateTime()
-  updatedAt  DateTime @default(now()) @updatedAt() @db.DateTime()
+  createdAt  DateTime @default(now()) @db.Timestamp(0)
+  updatedAt  DateTime @default(now()) @updatedAt() @db.Timestamp(0)
 }
